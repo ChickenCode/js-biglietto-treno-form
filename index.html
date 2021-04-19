@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+        <h1 class="text-center">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+    
+        <form class="col-sm-8 col-sm-offset-2 white text-center" id="form" action="">
+            <div class="d-inline-block"> 
+                <label for="name">Nome e Cognome</label><br>
+                <input type="text" name="name" placeholder="Nome e cognome">
+            </div>
+
+            <div class="d-inline-block"> 
+                <label for="distance">Km da percorrere</label><br>
+                <input type="text" name="distance" placeholder="Distanza (km)">
+            </div> 
+
+            <div class="d-inline-block"> 
+                <label for="age">Fascia d'età</label><br>
+                <select name="age" id="age">
+                    <option value="" disabled selected>Età</option>
+                    <option value="Minorenne">Minorenne</option>
+                    <option value="Maggiorenne">Maggiorenne</option>
+                    <option value="Over-65">Over-65</option>
+                </select>
+            </div> 
+
+            <div>
+                <button class ="myButton"><b>Genera</b></button>
+                <button class ="myButton" type="reset"><b>Annulla</b></button>
+            </div>
+        </form>
+
+        <h1 class="text-center col-sm-12">IL TUO BIGLIETTO</h1>
+
+        <div class= "col-sm-8 col-sm-offset-2 white biglietto">
+            <h3><b>DETTAGLIO PASSEGGERI</b></h3>
+            <div class="">
+                <div class="sup-row">
+                    <div class="d-inline-block grigio"><h4><b>NOME<br>PASSEGGERO</b></h4></div><!--
+
+                    --><div class="d-inline-block"><h4><b>Offerta</b></h4></div><!--
+
+                    --><div class="d-inline-block"><h4><b>Carrozza</b></h4></div><!--
+
+                    --><div class="d-inline-block"><h4><b>Codice<br>CP</b></h4></div><!--
+
+                    --><div class="d-inline-block"><h4><b>Costo<br>biglietto</b></h4></div>
+                </div>
+                <div class="inf-row">
+                    <div class="d-inline-block grigio"><p><b id="insertName"></b></p></div><!--
+
+                    --><div class="d-inline-block"><p id="offerta"></p></div><!--
+
+                    --><div class="d-inline-block" ><p id="carrozza"></p></div><!--
+
+                    --><div class="d-inline-block" ><p id="codiceCP"></p></div><!--
+
+                    --><div class="d-inline-block" ><p id="prezzo"></p></div>
+                </div>
+            </div>
+        </div>
+
+        <script src="myScript.js"></script>
+</body>
+</html>
